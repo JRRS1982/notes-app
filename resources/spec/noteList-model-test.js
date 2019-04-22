@@ -6,13 +6,12 @@
   // naming the test. 
   function testOfListObject(){
     //creating the object. 
-    var thisNewListObject = new NoteList();
+    var testNewListObject = new NoteList();
     // creating a note object
-    var thisNewNote = new Note("some text");
-    // making a test that creates an object, adds a note to it and 
-    // console.log(thisNewListObject)
-    // console.log(thisNewNote)
-    assert.isTrue(thisNewListObject.addNoteToList(thisNewNote) === Note)
+    var testNewNote = new Note("some text");
+    // making a test that creates an object, adds a note to it OOP style. 
+    testNewListObject.addNoteToList(testNewNote) 
+    assert.isTrue(testNewListObject.list[0]) === ["some text"]
   };
   testOfListObject();
 })(this);

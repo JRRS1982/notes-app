@@ -8,8 +8,11 @@
   // creating a method to add a note to the list. 
   NoteList.prototype.addNoteToList = function(noteToAdd) {
     this.list.push(noteToAdd)
-    console.log(this[1])
   };
-  
+
+  NoteList.prototype.addNoteToList = function(noteToAdd) {
+    this.list.push(noteToAdd);
+  };
+
   exports.NoteList = NoteList;
 })(this);
